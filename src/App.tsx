@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch } from 'antd';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import { getDashboardRoutes, getPublicRoutes } from './Routes';
+// import { DashboardLayout } from './Layouts';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// const publicRoutes = getPublicRoutes();
+// const dashboardRoutes = getDashboardRoutes();
+
+const App = () => (
+  // <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/" element={<DashboardLayout />}>
+  //       {dashboardRoutes.map(
+  //         (route) =>
+  //           !route.isDisabled && (
+  //             <Route
+  //               key={route.path}
+  //               index={route.isIndex}
+  //               caseSensitive={route.isCaseSensitive}
+  //               path={route.path}
+  //               element={route.element}
+  //             />
+  //           )
+  //       )}
+  //     </Route>
+  //     {/* === Public Route === */}
+  //     {publicRoutes.map(
+  //       (route) =>
+  //         !route.isDisabled && (
+  //           <Route
+  //             key={route.path}
+  //             index={route.isIndex}
+  //             caseSensitive={route.isCaseSensitive}
+  //             path={route.path}
+  //             element={route.element}
+  //           />
+  //         )
+  //     )}
+  //   </Routes>
+  // </BrowserRouter>
+  <Switch />
+);
 
 export default App;
