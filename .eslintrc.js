@@ -2,18 +2,18 @@ module.exports = {
   env: {
     jest: true,
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: ['plugin:@typescript-eslint/recommended', 'airbnb', 'prettier'],
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
   plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   rules: {
@@ -28,8 +28,8 @@ module.exports = {
       'warn',
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err'
-      }
+        argsIgnorePattern: 'res|next|^err',
+      },
     ],
     'consistent-return': 0,
 
@@ -43,8 +43,8 @@ module.exports = {
       {
         printWidth: 90,
         singleQuote: true,
-        endOfLine: 'auto'
-      }
+        endOfLine: 'auto',
+      },
     ],
 
     // === REACT === //
@@ -57,11 +57,12 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/react-in-jsx-scope': 0,
     'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx']
-      }
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
+      },
     ],
 
     // === REACT HOOKS === //
@@ -73,8 +74,8 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': [
       'warn',
       {
-        aspects: ['invalidHref']
-      }
-    ]
-  }
+        aspects: ['invalidHref'],
+      },
+    ],
+  },
 };
