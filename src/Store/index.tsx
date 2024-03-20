@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { apiAuth } from '../Feature';
+import { apiAuth } from '../Services';
+
 
 const store = configureStore({
   reducer: {

@@ -7,7 +7,7 @@ import {
   ResetPassword,
   //
   Dashboard,
-} from '../Pages';
+} from '../Views';
 
 export const getPublicRoutes = () => [
   {

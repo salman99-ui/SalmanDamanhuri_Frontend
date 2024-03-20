@@ -21,7 +21,7 @@ const App = () => (
                 path={route.path}
                 element={route.element}
               />
-            )
+            ),
         )}
       </Route>
       {/* === Public Route === */}
@@ -35,7 +35,7 @@ const App = () => (
               path={route.path}
               element={route.element}
             />
-          )
+          ),
       )}
     </Routes>
   </BrowserRouter>

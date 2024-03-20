@@ -24,6 +24,10 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-use-before-define': 0,
     'no-plusplus': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 0,
+    'no-restricted-syntax': ['off', 'ForOfStatement'],
     'no-unused-vars': [
       'warn',
       {
@@ -58,6 +62,9 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-props-no-spreading': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'no-param-reassign': 0,
+    'global-require': 0,
+    '@typescript-eslint/no-var-requires': 0,
     'react/jsx-filename-extension': [
       1,
       {
