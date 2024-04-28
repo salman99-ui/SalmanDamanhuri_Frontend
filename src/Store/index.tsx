@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { apiAuth } from '../Services';
 
-
 const store = configureStore({
   reducer: {
     [apiAuth.reducerPath]: apiAuth.reducer,
