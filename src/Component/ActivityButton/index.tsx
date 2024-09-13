@@ -1,6 +1,6 @@
 import { DeleteOutlined, EditOutlined, EyeOutlined } from '@ant-design/icons';
 import React, { useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { PropsActivity } from '../../Type/component';
 
 function Activity({ index, item, isShow, handleEdit, handleDelete }: PropsActivity) {
