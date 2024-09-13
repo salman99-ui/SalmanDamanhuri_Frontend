@@ -1,9 +1,10 @@
 import { DeleteOutlined, EditOutlined, EyeOutlined } from '@ant-design/icons';
 import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { PropsActivity } from '../../Type/component';
 
 function Activity({ index, item, isShow, handleEdit, handleDelete }: PropsActivity) {
+  const navigate = useNavigate();
   const [edit, setEdit] = useState<boolean>(false);
   const inputRef1 = useRef<HTMLInputElement | null>(null);
   const inputRef2 = useRef<HTMLInputElement | null>(null);
@@ -75,12 +76,17 @@ function Activity({ index, item, isShow, handleEdit, handleDelete }: PropsActivi
         </div>
         {isShow && (
           <div className="border border-solid border-green-300 rounded">
-            <Link
-              to="/detail"
+            <button
+              type="button"
               className="border-none bg-transparent px-2 py-1 cursaor-pointer"
+              onClick={() =>
+                navigate('/detail', {
+                  state: item,
+                })
+              }
             >
               <EyeOutlined style={{ color: 'white' }} />
-            </Link>
+            </button>
           </div>
         )}
       </div>

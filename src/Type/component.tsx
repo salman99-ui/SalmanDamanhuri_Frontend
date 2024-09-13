@@ -9,6 +9,7 @@ export interface PropsTodoInput {
 
 export interface PropsActivity {
   index: number;
+  isShow?: boolean;
   item: AddActivity;
   handleDelete(index: number): void;
   handleEdit(index: number, item: AddActivity): void;
